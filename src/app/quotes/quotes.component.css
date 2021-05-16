@@ -1,0 +1,18 @@
+h1 {
+    margin-top: 4%;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content{
+    margin-top: 4%;
+}
+
+.quote{
+    background-color: lightgray;
+    margin-bottom: 2%;
+    font-size: 18px;
+    padding: 10px;
+}

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NewquoteComponent } from './newquote/newquote.component';
-import { QuotesComponent } from './quotes/quotes.component';
+import { QuoteComponent } from './quotes/quotes.component';
 
 const routes: Routes = [
   {
     path: "quotes",
-    component: QuotesComponent
+    component: QuoteComponent
   },
 
   {
@@ -20,4 +20,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents =[QuotesComponent, NewquoteComponent];

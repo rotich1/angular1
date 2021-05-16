@@ -1,0 +1,14 @@
+<div class="container right">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="./../../assets/thumbs_up.png" alt="Thumbs down" height="40px" width="40px"
+                (click)='upvote()'>{{quote.upvote}}
+
+            <img src="./../../assets/thumbs_down.png" alt="Thumbs up" height="30px" width="30px"
+                (click)='downvote()'>{{quote.downvote}}
+
+            <button (click)='deleteQuote(true)' class="btn btn-danger float-end">Delete Quote</button>
+
+        </div>
+    </div>
+</div>

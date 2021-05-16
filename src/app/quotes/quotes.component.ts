@@ -1,40 +1,46 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Quote } from '../qoute';
 
 @Component({
-  selector: 'app-quotes',
+  selector: 'app-quote',
   templateUrl: './quotes.component.html',
   styleUrls: ['./quotes.component.css']
 })
+export class QuoteComponent implements OnInit {
 
-export class QuotesComponent implements OnInit {
+  quotes: Quote[] = [
+  ];
 
+  message: String = new Date().toDateString();
 
+  toggleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+  completeQuote(isComplete, index) {
+    if (isComplete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`)
+
+      if (toDelete) {
+        this.quotes.splice(index, 1)
+      }
+    }
+  }
   constructor() { }
+
 
   ngOnInit(): void {
   }
 
-  newQuote = new Quote("", "");
-  @Output() addQuote = new EventEmitter<Quote>();
-
-  submitQuote() {
-    this.addQuote.emit(this.newQuote);
-  }
-
-  quote: Quote[] = [
-  ];
-
-  addNewQuote(quote: any) {
-    let quoteLength = this.quote.length;
-    quote.id = quoteLength + 1;
-    quote.completeDate = new Date(quote.completeDate)
-    this.quote.push(quote)
-  }
-
-}
-
-export class Quote {
-  constructor(public author: string, public quote: string) {
-    console.log("Constructor");
-  }
 }

@@ -1,12 +1,29 @@
-<div class="container">
+<h1>QUOTE WORLD</h1>
+<hr>
+<div class="container content">
     <div class="row">
-        <div class="col-md-2">
+        <!-- <div class="col-md-6">
 
+        </div> -->
+        <div class="col-md-6">
+            <app-newquote (addQuote)="addNewQuote($event)"></app-newquote>
         </div>
 
-        <div class="col-md-10">
-                
+        <div class="col-md-6">
+            <div *ngFor='let quote of quotes;let i = index'>
+                <div class="quote">
+                    <h4>{{quote.author}} published on {{quote.completeDate|date}}</h4>
+                    <h5>{{quote.quote}}</h5>
+                    <!-- <p>{{quote.description}}</p> -->
+                    <!-- <p class="btn btn-primary">Upvote</p> -->
+                </div>
+
+                <div>
+                    <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                </div>
+            </div>
         </div>
+
     </div>
 </div>
-
+<!-- <app-router></app-router> -->
