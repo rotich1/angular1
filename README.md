@@ -3,9 +3,7 @@
 ### A website application that collects and displays quotes and thumbs up or thumbs down, May 2021
 #### Copyright (c) 2021 Kiptoo Rotich
 ## Description
-This website collects user data i.e Author name of a quote, the quote itself and the date the quote was created. From the data collected, this application generates the time passed since the creation of the quote. Visitors of the website can give thumbs up or thumbs down if the like or dislike the quote. Users can post more than one quote.
-
-## Setup/Installation Requirements
+This website collects user data i.e Author's name of a quote, the quote itself, and the date the quote was created. From the data collected, this application generates the time passed since the creation of the quote. Visitors of the website can give thumbs up or thumbs down if they like or dislike the quote. Users can post more than one quote.
 
 ## Development server
 
@@ -26,11 +24,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/)
+
 ### Live Site
 View [live](https://rotich1.github.io/Pizza/)
-
-## Known Bugs
-The project takes one order a a time.
 
 ## Technologies Used
 * HTML
