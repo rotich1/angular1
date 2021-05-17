@@ -1,3 +1,11 @@
 .right{
     float: right;
 }
+
+.delete{
+    margin-bottom: 10px;
+}
+
+.deleteHr{
+    margin-bottom: 10px;
+}
