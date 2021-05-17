@@ -1,2 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.content{
+ background-color: lightgray;
+ box-shadow: 0pc 0pc 3px 3px gray;
+ border-radius: 3px;
+ padding: 2%;
+}
