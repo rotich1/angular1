@@ -15,6 +15,7 @@ export class QuoteDetailsComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
+  //The code below increaments the upvote
   upvote() {
     this.quote.upvote += 1;
   }
