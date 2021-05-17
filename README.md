@@ -1,8 +1,11 @@
 # QUOTES
 
 ### A website application that collects and displays quotes and thumbs up or thumbs down, May 2021
+
 #### Copyright (c) 2021 Kiptoo Rotich
+
 ## Description
+
 This website collects user data i.e Author's name of a quote, the quote itself, and the date the quote was created. From the data collected, this application generates the time passed since the creation of the quote. Visitors of the website can give thumbs up or thumbs down if they like or dislike the quote. Users can post more than one quote.
 
 ## Development server
@@ -40,8 +43,3 @@ Kindly let us know your feedbacks and concerns and you can also ask questions th
 
 ### License
 This is under the [MIT](LICENSE) license
-
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
