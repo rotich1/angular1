@@ -26,7 +26,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/)
 
 ### Live Site
-View [live](https://rotich1.github.io/Pizza/)
+View [live](rotich1.github.io/angular1/)
 
 ## Technologies Used
 * HTML

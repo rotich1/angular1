@@ -9,3 +9,14 @@ h1 {
 .content{
     margin-top: 4%;
 }
+
+h4{
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h5{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
