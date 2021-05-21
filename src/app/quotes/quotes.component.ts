@@ -14,6 +14,7 @@ export class QuoteComponent implements OnInit {
   message: String = new Date().toDateString();
 
   toggleDetails(index) {
+    console.log(index)
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
   addNewQuote(quote) {
@@ -26,6 +27,10 @@ export class QuoteComponent implements OnInit {
     if (isComplete) {
       this.quotes.splice(index, 1);
     }
+  }
+
+  gethigh() {
+    return Math.max(...this.quotes.map(quote => quote.upvote))
   }
 
   deleteQuote(isComplete, index) {

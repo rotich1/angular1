@@ -10,15 +10,23 @@
         </div>
 
         <div class="col-md-6 display">
-            <div *ngFor='let quote of quotes;let i = index'>
+            <div *ngIf="quotes.length<1">
+                <p class="nothing">Your quotes will appear here after you post</p>
+            </div>
+            <div *ngFor='let quote of quotes;let i = index' class="sep">
+
+
                 <div class="quote">
-                    <h4>{{quote.author}} published {{(quote.completeDate|timeCount)}}days ago.</h4>
-                    <h5>{{quote.quote}}</h5>
+                    <h4>{{quote.author}} published {{(quote.completeDate|timeCount)}} seconds ago.</h4>
+                    <button (click)='toggleDetails(i)' class="btn btn-primary">Show details</button>
+                </div>
+                <div *ngIf="gethigh()==quote.upvote && quote.upvote > 0">
+                    <p class="high bg-success">Highest</p>
+                </div>
+                <div *ngIf='quote.showDescription'>
+                    <app-quote-details [quotes]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
                 </div>
 
-                <div>
-                    <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-                </div>
             </div>
         </div>
 

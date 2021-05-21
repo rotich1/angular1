@@ -6,17 +6,37 @@ h1 {
     text-align: center;
 }
 
-.content{
+.content {
     margin-top: 4%;
 }
 
-h4{
+h4 {
     color: darkblue;
     font-family: 'Times New Roman', Times, serif;
 }
 
-h5{
+h5 {
     color: black;
     font-size: 18px;
     font-weight: 500;
+}
+
+.high {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+.sep {
+    margin-top: 5%;
+}
+
+.nothing{
+    font-size: 24px;
+    color: brown;
+    font-weight: 600;
+    font-style: italic;
+
 }
